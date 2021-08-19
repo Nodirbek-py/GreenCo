@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenCo | Dashboard</title>
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section class="grid">
+      <aside>
+        <div class="logo">
+          <img src="./assets/img/logo.png" alt="" class="logo-img" />
+        </div>
+        <div class="link-group">
+          <ul class="nav-links">
+            <li class="nav-link active"><a href="#">Dashboard</a></li>
+            <li class="nav-link"><a href="#">Invoices</a></li>
+            <li class="nav-link"><a href="#">Statements</a></li>
+            <details>
+              <summary>Carrier Account</summary>
+              <li class="nav-link"><a href="#">Accounting</a></li>
+              <li class="nav-link"><a href="#">Driver List</a></li>
+              <li class="nav-link"><a href="#">Documents</a></li>
+            </details>
+            <li class="nav-link"><a href="#">Preformance</a></li>
+          </ul>
+        </div>
+        <div class="nav-btns">
+          <span class="sm-txt">Quick links</span>
+          <div class="btn-group">
+            <button class="btn btn-light">Triumph</button>
+            <button class="btn btn-light">EzCOI</button>
+            <button class="btn btn-light">FleetONE</button>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <nav>
+          <span class="md-txt">USDOT#3279627 <span class="line">|</span> MC#1036726 </span>
+        </nav>
+        <div class="center">
+          <div class="navigation">
+            <div class="nav-btn-group">
+              <button class="nav-btn green-txt-1 active">NEW TRIP</button>
+              <button class="nav-btn green-txt-1">EXPENCES</button>
+            </div>
+            <div class="nav-info">
+              <p class="green-txt-1">TIME NOW: New York / 08:23 a.m.</p>
+              <p class="green-txt-1">Weather Condition: RAINING: 23*</p>
+            </div>
+           
+          </div>
+          <div class="adding">
+            <div class="adding-info">
+              <span class="sm-txt-1">Today:</span>
+              <div class="right-side">
+                <span class="sm-txt-1">Phone Number:</span>
+                <span class="sm-txt-1">Truck Number:</span>
+                <span class="sm-txt-1">Trailer Number:</span>
+              </div>
+            </div>
+            <div class="adding-main">
+              <div class="date">
+                <p class="month green-txt-2">September</p>
+                <p class="date green-txt-2">27</p>
+                <p class="day green-txt-2">SUNDAY</p>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <select name="dispatch" id="dispatch" class="input">
+                    <option value="" class="input" disabled selected hidden>
+                      Dispatch Name
+                    </option>
+                    <option value="" class="input">Dispatch #1</option>
+                    <option value="" class="input">Dispatch #2</option>
+                    <option value="" class="input">Dispatch #3</option>
+                    <option value="" class="input">Dispatch #4</option>
+                  </select>
+                  <select name="board" id="board" class="input">
+                    <option value="" class="input" disabled selected hidden>Board</option>
+                    <option value="" class="input">Board #1</option>
+                    <option value="" class="input">Board #2</option>
+                    <option value="" class="input">Board #3</option>
+                    <option value="" class="input">Board #4</option>
+                  </select>
+                  <select name="owner" id="owner" class="input">
+                    <option value="" class="input" disabled selected hidden>
+                      Owner Operator
+                    </option>
+                    <option value="" class="input">Operator #1</option>
+                    <option value="" class="input">Operator #2</option>
+                    <option value="" class="input">Operator #3</option>
+                    <option value="" class="input">Operator #4</option>
+                  </select>
+                  <select name="driver" id="driver" class="input">
+                    <option value="" class="input" disabled selected hidden>
+                      Driver's Name
+                    </option>
+                    <option value="" class="input">Dispatch #1</option>
+                    <option value="" class="input">Dispatch #1</option>
+                    <option value="" class="input">Dispatch #1</option>
+                    <option value="" class="input">Dispatch #1</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <input
+                    type="text"
+                    name="dh"
+                    placeholder="D - H"
+                    class="input"
+                  />
+                  <input
+                    type="text"
+                    name="origin"
+                    placeholder="Origin"
+                    class="input"
+                  />
+                  <input
+                    type="number"
+                    min="0"
+                    name="milage"
+                    placeholder="Milage"
+                    class="input"
+                  />
+                  <input
+                    type="text"
+                    name="destination"
+                    placeholder="Destination"
+                    class="input"
+                  />
+                  <input
+                    type="text"
+                    name="rate"
+                    placeholder="Trip rate"
+                    class="input"
+                  />
+                  <input
+                    type="datetime"
+                    placeholder="Delivery Date & Time"
+                    class="input"
+                    name="datetime"
+                  />
+                  <input
+                    type="text"
+                    name="notes"
+                    placeholder="Special Notes"
+                    class="input"
+                  />
+                  <button class="btn btn-green-2">Cover</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table-grid">
+            <div class="table-left">
+              <div class="table-nav">
+                <div class="table-nav-left">
+                  <p class="green-txt-2">Trip List</p>
+                  <span class="search-bar">
+                    <input
+                      type="text"
+                      placeholder="Search by ID, location, driver..."
+                      class="input"
+                    />
+                    <img src="./assets/img/loupe.svg" alt="" />
+                  </span>
+                </div>
+                <div class="table-nav-right">
+                  <div class="start">
+                    <span class="sm-txt-2">Start</span>
+                    <img src="./assets/img/calendar.svg" alt="" />
+                    <input type="date" class="start-end" />
+                  </div>
+                  <div class="end">
+                    <span class="sm-txt-2">End</span>
+                    <img src="./assets/img/calendar.svg" alt="" />
+                    <input type="date" class="start-end" />
+                  </div>
+                </div>
+              </div>
+              <div class="table-statistics">
+                <div class="table-trip negative">
+                  <div class="trip-nav">
+                    <span class="sm-txt-2"
+                      >Dispatcher: Phil | Board: AMAZON | Owner: Nurbek |
+                      Dirver: Mark</span
+                    >
+                  </div>
+                  <div class="trip-body">
+                    <span class="trip-number"> 101 </span>
+                    <div class="trip-destination">
+                      <div class="destination">
+                        <h1 class="green-txt-2">Columbus, OH</h1>
+                        <span class="sm-txt-2">Sun Sep 7 10:00 EDT</span>
+                      </div>
+                      <img src="./assets/img/arrow.svg" alt="">
+                      <div class="destination">
+                          <h1 class="green-txt-2">Philadelphia, PA</hh1>
+                            <span class="sm-txt-2">Mon Sep 8 21:00 EDT</span>
+                      </div>
+                    </div>
+                    <span class="pdf">
+                        PDF ATTACHED
+                    </span>
+                    <div class="milage">
+                        <h1>475 miles</h1>
+                        <span class="sm-txt-2">Total miles:</span>
+                    </div>
+                    <div class="destination-price">
+                        <p class="green-txt-2">1600$ | <span class="sm-txt-2">3.36$ / mi</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-trip positive">
+                  <div class="trip-nav">
+                    <span class="sm-txt-2"
+                      >Dispatcher: Phil | Board: AMAZON | Owner: Nurbek |
+                      Dirver: Mark</span
+                    >
+                  </div>
+                  <div class="trip-body">
+                    <span class="trip-number"> 101 </span>
+                    <div class="trip-destination">
+                      <div class="destination">
+                        <h1 class="green-txt-2">Columbus, OH</h1>
+                        <span class="sm-txt-2">Sun Sep 7 10:00 EDT</span>
+                      </div>
+
+                      <img src="./assets/img/arrow.svg" alt="">
+                      <div class="destination">
+                          <h1 class="green-txt-2">Philadelphia, PA</hh1>
+                            <span class="sm-txt-2">Mon Sep 8 21:00 EDT</span>
+                      </div>
+                    </div>
+                    <span class="pdf">
+                        PDF ATTACHED
+                    </span>
+                    <div class="milage">
+                        <h1>475 miles</h1>
+                        <span class="sm-txt-2">Total miles:</span>
+                    </div>
+                    <div class="destination-price">
+                        <p class="green-txt-2">1600$ | <span class="sm-txt-2">3.36$ / mi</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-trip positive">
+                  <div class="trip-nav">
+                    <span class="sm-txt-2"
+                      >Dispatcher: Phil | Board: AMAZON | Owner: Nurbek |
+                      Dirver: Mark</span
+                    >
+                  </div>
+                  <div class="trip-body">
+                    <span class="trip-number"> 101 </span>
+                    <div class="trip-destination">
+                      <div class="destination">
+                        <h1 class="green-txt-2">Columbus, OH</h1>
+                        <span class="sm-txt-2">Sun Sep 7 10:00 EDT</span>
+                      </div>
+                      <img src="./assets/img/arrow.svg" alt="">
+                      <div class="destination">
+                          <h1 class="green-txt-2">Philadelphia, PA</hh1>
+                            <span class="sm-txt-2">Mon Sep 8 21:00 EDT</span>
+                      </div>
+                    </div>
+                    <span class="pdf">
+                        PDF ATTACHED
+                    </span>
+                    <div class="milage">
+                        <h1>475 miles</h1>
+                        <span class="sm-txt-2">Total miles:</span>
+                    </div>
+                    <div class="destination-price">
+                        <p class="green-txt-2">1600$ | <span class="sm-txt-2">3.36$ / mi</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-total">
+                  <div class="total-nav">
+                      <h1 class="green-txt-2">Amazon GROSS: 800$</h1>
+                      <h1 class="green-txt-2">DAT Gross: 4000$</h1>
+                  </div>
+                  <div class="total-detail">
+                    <h1 class="green-txt-2">Total gross: 4800$</h1>
+                    <h1 class="green-txt-2">Total miles: 1425</h1>
+                    <h1 class="green-txt-2">Average: 3.36$/mile</h1>
+                  </div>
+              </div>
+            </div>
+            <div class="table-right">
+                <div class="table-nav">
+                    <h1 class="green-txt-2">Drivers Activity</h1>
+                    <h1 class="green-txt-2 italic">Schedule new</h1>
+                </div>
+                <div class="table-statistics">
+                    <div class="activity">
+                        <div class="activity-inner">
+                            <h1>08/02</h1>
+                            <h1>Monday</h1>
+                        </div>
+                        <div class="activity-inner">
+                            <p class="white-txt-1">Driver</p>
+                            <p class="orange-txt-1">Mark</p>
+                        </div>
+                        <div class="activity-inner">
+                            <p class="orange-txt-1">Mark</p>
+                        </div>
+                        <div class="activity-inner"></div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-inner">
+                            <h1>08/02</h1>
+                            <h1>Monday</h1>
+                        </div>
+                        <div class="activity-inner">
+                            <p class="white-txt-1">Driver</p>
+                            <p class="orange-txt-1">Mark</p>
+                        </div>
+                        <div class="activity-inner">
+                            <p class="white-txt-1">Destination</p>
+                            <p class="orange-txt-1">Philadelphia, PA</p>
+                        </div>
+                        <div class="activity-inner">
+                            <h1>Transit Time 12 hours</h1>
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-inner">
+                            <h1>08/02</h1>
+                            <h1>Monday</h1>
+                        </div>
+                        <div class="activity-inner">
+                            <p class="white-txt-1">Driver</p>
+                            <p class="orange-txt-1">Mark</p>
+                        </div>
+                        <div class="activity-inner">
+                            <p class="white-txt-1">Destination</p>
+                            <p class="orange-txt-1">Philadelphia, PA</p>
+                        </div>
+                        <div class="activity-inner">
+                            <h1>Transit Time 12 hours</h1>
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-inner">
+                            <h1>08/02</h1>
+                            <h1>Monday</h1>
+                        </div>
+                        <div class="activity-inner">
+                            <p class="white-txt-1">Driver</p>
+                            <p class="orange-txt-1">Mark</p>
+                        </div>
+                        <div class="activity-inner">
+                            <p class="white-txt-1">Destination</p>
+                            <p class="orange-txt-1">Philadelphia, PA</p>
+                        </div>
+                        <div class="activity-inner">
+                            <h1>Transit Time 12 hours</h1>
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-inner">
+                            <h1>08/02</h1>
+                            <h1>Monday</h1>
+                        </div>
+                        <div class="activity-inner">
+                            <p class="white-txt-1">Driver</p>
+                            <p class="orange-txt-1">Mark</p>
+                        </div>
+                        <div class="activity-inner">
+                            <p class="white-txt-1">Destination</p>
+                            <p class="orange-txt-1">Philadelphia, PA</p>
+                        </div>
+                        <div class="activity-inner">
+                            <h1>Transit Time 12 hours</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>

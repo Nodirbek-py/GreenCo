@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Myriad Pro";
+  background: #f3f3f3;
+}
+
+button,
+input,
+textarea,
+select,
+option {
+  font-family: "Myriad Pro";
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 7fr;
+      grid-template-columns: 1fr 7fr;
+}
+
+aside,
+main {
+  height: 100vh;
+}
+
+aside,
+nav {
+  background: #005952;
+}
+
+.green-txt-1 {
+  color: #054a48;
+}
+
+.green-txt-2 {
+  color: #066;
+}
+
+.sm-txt-1 {
+  font-size: 14px;
+}
+
+nav {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+}
+
+.logo-img {
+  padding: 10px 30px;
+  width: 90%;
+}
+
+.nav-links {
+  margin-top: 50px;
+  list-style: none;
+}
+
+details .nav-link {
+  padding-left: 25px;
+}
+
+.nav-link a,
+summary,
+.nav-link {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 21px;
+  color: #fff;
+}
+
+details > summary {
+  list-style: none;
+}
+
+summary {
+  padding-left: 30px;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:hover,
+.nav-link:hover {
+  background: #0b6f67;
+}
+
+.nav-btns {
+  padding: 25px;
+  margin-top: 50px;
+}
+
+.sm-txt {
+  color: #fff;
+  font-style: italic;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.btn-group {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.btn-group .btn {
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  width: 100%;
+  background: #0b6f67;
+  border: none;
+  padding: 12px 0;
+  margin: 5px 0;
+}
+
+nav .md-txt {
+  font-size: 25px;
+  font-style: italic;
+  color: #3cc;
+}
+
+nav .line {
+  margin: 0 25px;
+  font-style: normal;
+}
+
+.center {
+  padding: 15px;
+}
+
+.navigation {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-btn {
+  cursor: pointer;
+  padding: 10px 30px;
+  font-size: 21px;
+  border: none;
+  background: none;
+}
+
+.nav-btn.active,
+.adding {
+  background: #dddede;
+}
+
+.nav-info p {
+  font-size: 21px;
+}
+
+.nav-info p:first-child {
+  margin-right: 75px;
+}
+
+.adding {
+  padding: 10px 30px;
+}
+
+.adding-info,
+.adding-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.adding-info {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.adding-info span {
+  color: #a9aaaa;
+}
+
+.right-side span {
+  margin: 0 100px;
+}
+
+.adding-main {
+  padding: 0 25px;
+}
+
+div.date {
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.month,
+.day {
+  font-size: 20px;
+}
+
+p.date {
+  margin: -15px 0;
+  font-size: 72px;
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input {
+  border: none;
+  outline: none;
+  padding: 12px;
+  margin-right: 5px;
+}
+
+.input::-webkit-input-placeholder,
+select {
+  color: #b1b1b1;
+}
+
+.input:-ms-input-placeholder,
+select {
+  color: #b1b1b1;
+}
+
+.input::-ms-input-placeholder,
+select {
+  color: #b1b1b1;
+}
+
+.input::placeholder,
+select {
+  color: #b1b1b1;
+}
+
+.input * {
+  border: none;
+}
+
+option.input {
+  color: #000;
+}
+
+.row {
+  margin: 5px 0;
+}
+/*# sourceMappingURL=style.css.map */
