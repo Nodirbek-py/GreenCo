@@ -33,6 +33,9 @@ aside,
 nav {
   background: #005952;
 }
+.btn {
+  border: none;
+}
 .green-txt-1 {
   color: #054a48;
 }
@@ -148,6 +151,7 @@ nav .line {
 }
 .adding {
   padding: 10px 30px;
+  border-right: 10px solid #0b6f67;
 }
 .adding-info,
 .adding-main {
@@ -195,12 +199,110 @@ p.date {
 select {
   color: #b1b1b1;
 }
+select.input {
+  background: url(../img/arrowdown.svg), #fff;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: center;
+  -webkit-appearance: none;
+  appearance: none;
+  padding-right: 30px;
+}
 .input * {
-    border:none;
+  border: none;
 }
 option.input {
   color: #000;
 }
 .row {
+  display: flex;
+  align-items: center;
   margin: 5px 0;
+}
+.btn-green-2 {
+  background-color: #005952;
+  color: #fff;
+}
+.btn-cover {
+  cursor: pointer;
+  padding: 8px 36px;
+  font-size: 20px;
+}
+.table-grid {
+  margin-top: 15px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 3fr 2fr;
+}
+.table-left,
+.table-right {
+  padding: 10px 30px;
+  background: #fff;
+}
+.table-nav,
+.table-nav-left,
+.table-nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.table-nav img {
+  width: 1rem;
+}
+.table-nav-left p {
+  font-size: 21px;
+  margin-right: 20px;
+}
+.search-bar .input {
+  width: 100%;
+}
+.search-bar .input::placeholder {
+  color: #333;
+}
+.search-bar {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  border: 1px solid #ddd;
+}
+.sm-txt-2 {
+  color: #bbb;
+  font-style: italic;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.start,
+.end {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+.start img,
+.end img {
+  margin: 0 1rem;
+}
+
+.start-end {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  padding: 6px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+.date-picker {
+  background: transparent;
+  position: relative;
+  float: left;
+}
+.date-picker img {
+  z-index: 0;
+  top: 10px;
+  right: -10px;
+  position: absolute;
 }
